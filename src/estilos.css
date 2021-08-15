@@ -1,0 +1,33 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    margin: 0%;
+    padding: 0%;
+    /*background-color: black;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo{
+    color:rgb(255, 0, 191);
+    font-family: 'Gugi', cursive;
+    font-weight: lighter;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: greenyellow;
+    font-family: 'Cute Font', cursive;
+    font-size: 32px;
+}
