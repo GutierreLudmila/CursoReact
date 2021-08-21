@@ -30,6 +30,15 @@ nav a {
     font-size: 27px;
 }
 
+.tienda-container{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-family: 'Gugi', cursive;
+    color:rgb(255, 0, 191);
+
+}
 #icono{
     color: greenyellow;
 
