@@ -12,7 +12,7 @@ const ItemCount = ({ stock, initial,  onAdd }) => {
         }
     }
 
-    const restarContador = () => {
+    const restar = () => {
 
         if (contador > initial){
             setContador (contador - 1)
@@ -33,7 +33,7 @@ if (stock > 0){
                   Vaso de Gomitas
               </p>
               <div className = "contador">
-                  <button  onClick={restarContador}>-</button>
+                  <button  onClick={restar}>-</button>
                   <p>{contador}</p>
                   <button onClick={sumar}>+</button>
               </div>
@@ -49,7 +49,7 @@ if (stock > 0){
                   Vaso de Gomitas
               </p>
               <div className = "contador">
-                  <button  onClick={restarContador}>-</button>
+                  <button  onClick={restar}>-</button>
                   <p>{contador}</p>
                   <button onClick={sumar}>+</button>
               </div>
