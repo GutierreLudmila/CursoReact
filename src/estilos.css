@@ -37,9 +37,35 @@ nav a {
 h2{
     font-family: 'Gugi', cursive;
     color:rgb(255, 0, 191);
-
+    
 }
 #icono{
     color: greenyellow;
+    
+}
+.contador-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 222, 179, 0.719);
+    padding: 5px;
+    margin: 10px;
+    width: 120px;
+    align-items: center;
+}
+.contador{
+    margin: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+}
 
+button{
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+#agregar-carrito{
+    padding: 7px;
 }
