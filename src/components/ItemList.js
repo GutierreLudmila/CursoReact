@@ -1,24 +1,13 @@
-import {useEffect} from "react"
-import Item from "./Item"
+ import Item from "./Item"
 
-const promesa = new promise ((res,rej) =>{
-    setTimeout (() =>{
-        console.log(" id, title, description, price, pictureUrl")
-        res()
-        rej()
-    },2000 )
-})
-
-
-
-const ItemList = () => {
-
-
-    return (
-        <div>
-            <Item />
-        </div>
-    )
+const ItemList = (props) => {
+      return (
+          <div className="productos-cont">
+             {props.products.map(element => {
+                 return <Item title ={element.title} description={element.description} price={element.price}/>
+                })}
+          </div>
+      )
 }
 
 export default ItemList

@@ -9,44 +9,48 @@ header{
 
 #titulo{
     margin: 5px;
-    color:rgb(255, 0, 191);
+    color:#ff3b93;
     font-family: 'Gugi', cursive;
     font-weight: lighter;
 }
 nav{
     margin: 0%;
     width: 100%;
-    background-color: black;
+    background-color: #37023a ;
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 nav a {
     text-decoration: none;
-    color: greenyellow;
+    color:  #a7fd2a;
     font-family: 'Cute Font', cursive;
     font-size: 27px;
 }
 
 .tienda-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 h2{
     font-family: 'Gugi', cursive;
-    color:rgb(255, 0, 191);
+    color:#ff3b93;
     
 }
 #icono{
-    color: greenyellow;
+    color: #a7fd2a;
     
 }
 .contador-container{
     display: flex;
     flex-direction: column;
-    background-color: rgba(245, 222, 179, 0.719);
+    background-color: #ae3dff;
     padding: 5px;
     margin: 10px;
     width: 120px;
@@ -63,9 +67,34 @@ h2{
 button{
     background-color: whitesmoke;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 #agregar-carrito{
     padding: 7px;
+}
+
+.productos-cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items{
+    border-radius: 10px;
+    background-color:#55ffe2;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin: 5px;
+    padding: 7px;
+    text-align: center;
+}
+
+.items h3{
+        font-family: 'Gugi', cursive;
+}
+
+.items p{
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
 }
