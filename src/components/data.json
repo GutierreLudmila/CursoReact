@@ -1,0 +1,12 @@
+[{
+    "id": "01", "title": "Alfajor", "description": "Alfajor de chocolate", "price": "$40", "pictureUrl": "imgAlfajor" 
+},
+{
+    "id": "02", "title": "Gomitas Mogul", "description": "Gomitas saborizadas", "price": "$30", "pictureUrl": "imgGomitas" 
+},
+{
+    "id": "03", "title": "Chocolate", "description": "Barra de chocolate negro", "price": "$70",  "pictureUrl": "imgChoco"
+},
+{
+    "id": "04", "title": "Box de Golosinas", "description": "Caja de golosinas y snacks", "price": "$200",  "pictureUrl": "imgBox"
+}]
