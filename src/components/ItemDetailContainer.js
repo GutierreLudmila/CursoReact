@@ -1,21 +1,22 @@
 import {useEffect, useState} from "react" 
+import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail"
 
-const URL = "https://mocki.io/v1/36cc74dd-ec20-4261-86bf-2d0fea9acc89" ;
-const id = "04"; 
 
 const ItemDetailContainer = () => {
 
-    const [dataProd,setDataProd] = useState ([]);
+    const [dataProd,setDataProd] = useState ();
+    const {id} = useParams();
 
     useEffect (() =>{
-        fetch (URL)
+        fetch ("https://mocki.io/v1/c1824497-c1b0-4ee5-98f4-7b97e270981f")
         .then((response) => response.json())
         .then((data) => {
               const ID = data.find (data => data.id == id)
               setDataProd(ID)
             })
-    },[])
+
+    },[id])
 
     return(
         <div>

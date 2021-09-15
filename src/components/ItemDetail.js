@@ -1,10 +1,21 @@
+import ItemCount from "./ItemCount"
+import {useEffect, useState} from "react" 
+
 const ItemDetail = (props) => {
-     return(
+
+   
+    return(
+         <>
         <div className = "items">
-            <h3>{props.dataProd.title}</h3>
-            <p>{props.dataProd.description}</p>
-            <p>{props.dataProd.price}</p>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
+            <p>{props.price}</p>
         </div>
+        <div>
+            <ItemCount />
+            {/* <button onClick={handleClick}>Termina tu compra</button> */}
+        </div>
+        </>
      )
 }
 

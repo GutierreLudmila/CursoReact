@@ -37,27 +37,25 @@ const promesa = new Promise ((resolve, reject) => {
 const ItemListContainer = ({greeting}) => {
 
 
-    const [categories,setCategories] = useState ()
     const [products,setProducts] = useState ([]);
     const {id} = useParams()
-    console.log (id)
 
     useEffect (() => {
-
-      if (id == "/boxes"){
+ 
         fetch ("https://mocki.io/v1/36cc74dd-ec20-4261-86bf-2d0fea9acc89")
         .then((response) => response.json())
-        .then((data) => {
-              const prod = data.filter (data => data.id == "4")
-              setCategories(prod)
-            })
-      }
-      promesa 
-              .then( (resultado) => setProducts(resultado))
-              .catch(error => error)
-              .finally(() => console.log('Fin promesa, se encontraron los productos'))
+        .then((data) => { 
+
+          if(id){
+            const prod = data.filter (data => data.id == id)
+            setProducts(prod) 
+          }else{
+            setProducts(data)
+          }
+
+           }
               
-  },[id])
+    )},[id])
     
     return (
         <div className = "tienda-container">
@@ -70,6 +68,5 @@ const ItemListContainer = ({greeting}) => {
           </div>
         </div>
     )
-}
-
+  }
 export default ItemListContainer
