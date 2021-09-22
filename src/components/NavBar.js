@@ -11,9 +11,9 @@ const NavBar = () => {
                  Antojitos Bajoneros
                </h1>
               </Link>
-              <Link to = "/boxes">Boxes</Link>
-              <Link to = "/golosinas">golosinas</Link>
-              <Link to = "/snacks">Snacks</Link>
+              <Link to = "/category/Boxes">Boxes</Link>
+              <Link to = "/category/Golosinas">golosinas</Link>
+              <Link to = "/category/Snacks">Snacks</Link>
               <CartWidget />
            </nav>
          </header>

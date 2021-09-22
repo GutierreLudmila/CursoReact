@@ -6,7 +6,7 @@ const Item = (props) => {
             <h3>{props.title}</h3>
             <p>{props.description}</p>
             <p>{props.price}</p>
-            <Link to = {`/Item/:${props.key}`}>ver mas</Link>
+            <Link to = {`/item/${props.id}`}>ver mas</Link>
         </div>
     )
     

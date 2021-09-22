@@ -3,11 +3,11 @@ import {useState} from "react"
 
 const ItemCount = ({ stock, initial,  onAdd }) => {
  // Destucturing
-    const [contador, setContador] = useState (parseInt(initial))
+    const [contador, setContador] = useState (initial)
 
     const sumar = () => {
 
-        if (contador < parseInt(stock)){
+        if (contador < stock){
             setContador (contador + 1)
         }
     }
@@ -29,9 +29,7 @@ if (stock > 0){
     return (
         <>
           <div className = "contador-container">
-              <p>
-                  Vaso de Gomitas
-              </p>
+
               <div className = "contador">
                   <button  onClick={restar}>-</button>
                   <p>{contador}</p>
@@ -45,9 +43,7 @@ if (stock > 0){
     return (
         <>
           <div className = "contador-container">
-              <p>
-                  Vaso de Gomitas
-              </p>
+
               <div className = "contador">
                   <button  onClick={restar}>-</button>
                   <p>{contador}</p>

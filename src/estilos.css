@@ -98,3 +98,11 @@ button{
     font-family: 'Cute Font', cursive;
     font-size: 20px;
 }
+
+#quantity{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Cute Font', cursive;
+    color: #a7fd2a;
+    font-size: 25px;
+}

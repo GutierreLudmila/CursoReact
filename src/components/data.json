@@ -1,12 +1,30 @@
 [{
-    "id": "1", "title": "Alfajor", "description": "Alfajor de chocolate", "price": "$40", "pictureUrl": "imgAlfajor" 
+    "id": "1","categoryId":"Golosinas","title": "Alfajor", "description": "Alfajor de chocolate", "price": 40, "pictureUrl": "imgAlfajor" 
 },
 {
-    "id": "2", "title": "Gomitas Mogul", "description": "Gomitas saborizadas", "price": "$30", "pictureUrl": "imgGomitas" 
+    "id": "2","categoryId":"Golosinas","title": "Gomitas Mogul", "description": "Gomitas saborizadas", "price": 30, "pictureUrl": "imgGomitas" 
 },
 {
-    "id": "3", "title": "Chocolate", "description": "Barra de chocolate negro", "price": "$70",  "pictureUrl": "imgChoco"
+    "id": "3","categoryId":"Golosinas","title": "Chocolate Arcor", "description": "Barra de chocolate negro", "price": 70,  "pictureUrl": "imgChoco"
 },
 {
-    "id": "4", "title": "Box de Golosinas", "description": "Caja de golosinas y snacks", "price": "$200",  "pictureUrl": "imgBox"
+    "id": "4","categoryId":"Golosinas","title": "Vaso de Gomitas", "description": "Vaso relleno de gomitas surtidas", "price": 500,  "pictureUrl": "imgVaso"
+},
+{
+    "id": "5","categoryId":"Golosinas","title": "Milka ChocoPause", "description": "Oblea bañada en chocolate con leche", "price": 70,  "pictureUrl": "imgChocoPause"
+},
+{
+    "id": "6","categoryId":"Snacks","title": "Doritos chicos", "description": "Doritos clasicos de 80gr", "price": 120,  "pictureUrl": "imgDoritos"
+},
+{
+    "id": "7","categoryId":"Snacks","title": "Papas Lays chicas", "description": "Papas fritas clasicas Lays de 80gr", "price": 150,  "pictureUrl": "imgLaysChica"
+},
+{
+    "id": "8","categoryId":"Snacks","title": "Cheetos chicos", "description": "Chisitos clasicos de 80gs", "price": 125,  "pictureUrl": "imgCheetos"
+},
+{
+    "id": "9","categoryId":"Boxes", "title": "Box chico de Golosinas", "description": "Caja chica de golosinas", "price":550,  "pictureUrl": "imgBoxChica"
+},
+{
+    "id": "10","categoryId":"Boxes","title": "Box grande de Golosinas", "description": "Caja Grande de golosinas y snacks a elección", "price": 700,  "pictureUrl": "imgBoxGrande"
 }]

@@ -4,58 +4,29 @@ import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 
 
-const productos = [{
-  id: "01", 
-  title: "Alfajor", 
-  description: "Alfajor de chocolate", 
-  price: "$40", 
-  pictureUrl: "imgAlfajor" 
-},
-{
-  id: "02", 
-  title: "Gomitas Mogul", 
-  description: "Gomitas saborizadas", 
-  price: "$30", 
-  pictureUrl: "imgGomitas" 
-},
-{
-  id: "03", 
-  title: "Chocolate", 
-  description: "Barra de chocolate negro", 
-  price: "$70", 
-  pictureUrl: "imgChoco" 
-}];
-
-const promesa = new Promise ((resolve, reject) => {
-    setTimeout (() => {
-      resolve (productos);
-      reject (console.log("No se encontraron los productos"))
-    },2000)
-});
-
 
 const ItemListContainer = ({greeting}) => {
 
 
     const [products,setProducts] = useState ([]);
-    const {id} = useParams()
+    const {categoryId} = useParams()
 
     useEffect (() => {
  
-        fetch ("https://mocki.io/v1/36cc74dd-ec20-4261-86bf-2d0fea9acc89")
+        fetch ("https://mocki.io/v1/03e64626-7641-4f99-945e-a37ba19750fa")
         .then((response) => response.json())
         .then((data) => { 
 
-          if(id){
-            const prod = data.filter (data => data.id == id)
-            setProducts(prod) 
+          if(categoryId){
+            const cat = data.filter (data => data.categoryId === categoryId)
+            setProducts(cat) 
           }else{
             setProducts(data)
           }
 
            }
               
-    )},[id])
+    )},[categoryId])
     
     return (
         <div className = "tienda-container">
