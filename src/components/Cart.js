@@ -22,12 +22,14 @@ const Cart = () => {
                                 <button onClick={() => removeItem(element.item.id)}>Eliminar</button>
                             </div>
                             
-                              <p>${totalPrice()}</p>
+                            
                             </>
                         )
                    })
-            ) }
 
+                   
+            ) }
+             <p>${totalPrice()}</p>
             <button onClick={clear}>Vaciar Carrito</button>
         </div>    
     )
